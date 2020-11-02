@@ -9,6 +9,7 @@ platforms:
         defines:
           - __AVR_ATmega2560__
           - ARDUINO_CI
+          - __AVR__
         warnings:
         flags:
   
@@ -17,9 +18,14 @@ unittest:
         - mega2560
     libraries:
       - "LiquidCrystal"
+      - "Adafruit BusIO"
+      - "Adafruit_MAX31865"
+      
 
 compile:
     platforms:
       - mega2560
     libraries:
       - "LiquidCrystal"
+      - "Adafruit BusIO"
+      - "Adafruit_MAX31865"
