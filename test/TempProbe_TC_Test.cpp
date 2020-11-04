@@ -7,7 +7,6 @@
 #include "Adafruit_MAX31865.h"
 #endif
 
-
 unittest(readRTD_TC_TempProbe) {
   std::cout << std::endl;
   uint16_t expectedRTD = 0;

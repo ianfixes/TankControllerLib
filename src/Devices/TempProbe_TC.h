@@ -9,7 +9,7 @@
 
 // Adafruit MAX31865
 // The Adafruit MAX31865 is an external device that connects to a thermocouple (temperature
-// sensor), and has pins that can be used to read a resistance, temperature, or fault. The 
+// sensor), and has pins that can be used to read a resistance, temperature, or fault. The
 // associated library has a simple API as described below.
 //
 // Device I/O:
@@ -94,18 +94,30 @@ private:
 
 public:
   TempProbe_TC() {
-    thermo.begin(MAX31865_3WIRE); // Start pt100 temperature probe with 3 wire configuration
+    thermo.begin(MAX31865_3WIRE);  // Start pt100 temperature probe with 3 wire configuration
   }
 
-  uint16_t getResistance() { return thermo.readRTD(); }
-  float getTemperature() { return thermo.temperature(RTDnominal, refResistor); }
-  uint8_t readFault() { return thermo.readFault(); }
-  void clearFault() { thermo.clearFault(); }
+  uint16_t getResistance() {
+    return thermo.readRTD();
+  }
+  float getTemperature() {
+    return thermo.temperature(RTDnominal, refResistor);
+  }
+  uint8_t readFault() {
+    return thermo.readFault();
+  }
+  void clearFault() {
+    thermo.clearFault();
+  }
 
 #ifdef ARDUINO_CI
 
-  void setRTD(uint16_t newResistance) { thermo.setRTD(newResistance); }
-  void setFault(uint8_t newFault) { thermo.setFault(newFault); }
+  void setRTD(uint16_t newResistance) {
+    thermo.setRTD(newResistance);
+  }
+  void setFault(uint8_t newFault) {
+    thermo.setFault(newFault);
+  }
 
 #endif
 };
