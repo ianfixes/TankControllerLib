@@ -18,14 +18,16 @@ unittest:
         - mega2560
     libraries:
       - "LiquidCrystal"
+      - "RTClib"
       - "Adafruit BusIO"
       - "Adafruit_MAX31865"
-      
 
 compile:
     platforms:
       - mega2560
     libraries:
       - "LiquidCrystal"
+      - "RTClib"
       - "Adafruit BusIO"
       - "Adafruit_MAX31865"
+
