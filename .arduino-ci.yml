@@ -20,7 +20,7 @@ unittest:
       - "LiquidCrystal"
       - "RTClib"
       - "Adafruit BusIO"
-      - "Adafruit_MAX31865"
+      - "Adafruit MAX31865"
 
 compile:
     platforms:
@@ -29,5 +29,5 @@ compile:
       - "LiquidCrystal"
       - "RTClib"
       - "Adafruit BusIO"
-      - "Adafruit_MAX31865"
+      - "Adafruit MAX31865"
 
